@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[linux]]></title>
-    <url>%2F2017%2F05%2F10%2Flinux%2F</url>
-    <content type="text"><![CDATA[tags: linuxcategories: 学习]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[hello world]]></title>
     <url>%2F2017%2F05%2F09%2Fhello-world%2F</url>
     <content type="text"><![CDATA[#Hello World！这是mmaann的第一个网页]]></content>
