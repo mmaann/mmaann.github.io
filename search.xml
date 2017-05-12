@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Linux初识]]></title>
+    <url>%2F2017%2F05%2F11%2Flinux-simple-use%2F</url>
+    <content type="text"><![CDATA[Linux最基本的使用介绍：开机——终端——命令行——帮助——关机 登录 命令行：root/密码(密码输入时不显示) 图形界面：startx 终端 物理终端：直接接入本机的显示器和键盘；/dev/console 虚拟终端:在物理硬件之上以软件方式虚拟实现的终端；centos6、centos7提供6个虚拟终端：tty1-6，Ctrl+Alt+F#[1,6]；/dev/tty1-6 模拟终端：基于ssh或Telnet协议远程打开的界面；/dev/pts/#[0,n] 查看当前终端设备的命令：tty 交互式接口 启动终端后，附加在终端的交互式应用程序 GUI X protocol ,window manager,desktop Desktop Gnome（c，gtk） KDE（c++，gc） XFCE（轻量级桌面） CLI Shell程序： sh（bourn） csh tcsh ksh bash（bourn again shell，GPL） zsh 显示当前shell：echo $(shell) 显示系统支持的shell：cat /etc/shells 文件系统简介 文件包括两类数据： 元数据（metadata）：记录文件的属性 数据（data）：记录文件数据 文件名严格区分大小写 文件名可使用出/外的任意字符 /表示根目录，也代表目录分隔符 文件名的长度不超过255个字符 .开头的文件为隐藏文件 路径： 绝对路径：从根目录开始的路径 相对路径：从当前路径起始的路径 ..表示当前目录的上一层目录 pwd命令显示当前工作目录 Linux命令及帮助 命令： 文件系统相关 * 目录管理 * 文件管理 * 文件查看 * 文件编辑 系统管理相关 帮助： 内部命令：help COMMAND 外部命令： COMMAND -h(--help) man COMMAND 手册目录： /usr/share/man man1：用户命令 man2：系统调用 man3：C库调用 man4：设备文件及特殊文件 man5：配置文件格式 man6：游戏 man7：杂项 man8：管理类命令 有些命令会出现在不止一个章节，常看相应章节的文档用：man # COMMAND man命令的配置文件：/etc/man.config（centos6），/etc/mandb.conf info COMMAND 程序自身文档：README,INSTALL,Changelog 文档目录：/usr/share/doc/COMMAND-VERSION 站点官方文档：Documentation 发行版的官方文档 其他：搜索引擎，技术论坛 关机 关机：halt，poweroff，shutdown，init 0 重启：reboot，shutdown -r，init 6 查看登陆用户：who，whoami，w]]></content>
+      <categories>
+        <category>学习</category>
+        <category>Linux运维学习笔记</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+        <tag>Linux基础</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Linux的发展历史]]></title>
     <url>%2F2017%2F05%2F11%2Flinux-history%2F</url>
-    <content type="text"><![CDATA[Unix Unix的前身是由贝尔实验室的Ken Thompson用* 组合语言* 写成的。后来在1971-1973年间由Dennis Ritchie用* C语言* 改写后才成为Unix。 Unix具有可移植性，发展处许多分支，被称为Unix-like的操作系统。 最纯种的Unix：BSD和System V。 1979年：AT&amp;T推出 System V第七版后收回版权。 1986年：x86架构的Minix操作系统诞生。 GUN 1984年:Richard Stallman提出GNU计划，倡导自由软件（free software），并制定发布GPL（General Public Licne）授权模式 Free Software（自由软件） 取得软件与源代码 复制 修改 在发行 回馈 禁止的行为 修改授权：不能将一个GPL授权的自由软件，在修改后取消它的GPL授权 单纯售卖：不能单纯的贩卖自由软件 Open source（开源）授权 Apache MIT BSD 2 BSD 3 GPL LGPL Linux 1991年，芬兰人Linus Torvalds 开发出了Linux操作系统。Linux成功主要归因于：Minix（Unix），GNU， 开源社区等。Linux操作系统最底层的数据成为“核心（Kernel）” Linux distributions Linux Kernel Free Software Documentations（Tools） 可完整安装的程序 Linux的发型版本 商业版 社区版 RPM RHEL Centos Fedora SUSE DPKG（dpt） Debian Ubuntu Linux的哲学思想 一切皆文件：把几乎所有资源，包括硬件设备都组织为文件格式； 由众多单一目的小程序组成：一个程序只实现一个功能，而且要做好 尽量避免跟用户交互：实现脚本编程，以自动完成某些功能； 使用纯文本文件保存配置信息：一款使用的文本编程器即能完成系统配置工作。]]></content>
+    <content type="text"><![CDATA[Linux的前世今生：Unix——GNU——Linux Unix Unix的前身是由贝尔实验室的Ken Thompson用* 组合语言* 写成的。后来在1971-1973年间由Dennis Ritchie用* C语言* 改写后才成为Unix。 Unix具有可移植性，发展处许多分支，被称为Unix-like的操作系统。 最纯种的Unix：BSD和System V。 1979年：AT&amp;T推出 System V第七版后收回版权。 1986年：x86架构的Minix操作系统诞生。 GNU 1984年:Richard Stallman提出GNU计划，倡导自由软件（free software），并制定发布GPL（General Public Licne）授权模式 Free Software（自由软件） 取得软件与源代码 复制 修改 在发行 回馈 禁止的行为 修改授权：不能将一个GPL授权的自由软件，在修改后取消它的GPL授权 单纯售卖：不能单纯的贩卖自由软件 Open source（开源）授权 Apache MIT BSD GPL LGPL Linux 1991年，芬兰人Linus Torvalds 开发出了Linux操作系统。Linux成功主要归因于：Minix（Unix），GNU， 开源社区等。Linux操作系统最底层的数据成为“核心（Kernel）” Linux distributions Linux Kernel Free Software Documentations（Tools） 可完整安装的程序 Linux的发型版本 商业版 社区版 RPM RHEL Centos Fedora SUSE DPKG（dpt） Debian Ubuntu Linux的哲学思想 一切皆文件：把几乎所有资源，包括硬件设备都组织为文件格式； 由众多单一目的小程序组成：一个程序只实现一个功能，而且要做好 尽量避免跟用户交互：实现脚本编程，以自动完成某些功能； 使用纯文本文件保存配置信息：一款使用的文本编程器即能完成系统配置工作。]]></content>
       <categories>
         <category>学习</category>
         <category>Linux运维学习笔记</category>
@@ -11,6 +24,8 @@
       <tags>
         <tag>笔记</tag>
         <tag>Linux历史</tag>
+        <tag>Unix</tag>
+        <tag>GNU</tag>
       </tags>
   </entry>
   <entry>
@@ -29,6 +44,6 @@
   <entry>
     <title><![CDATA[hello world]]></title>
     <url>%2F2017%2F05%2F09%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Hello World！ 这是mann的第一个网页]]></content>
+    <content type="text"><![CDATA[Hello World！ 这是mann的第一篇blog]]></content>
   </entry>
 </search>
