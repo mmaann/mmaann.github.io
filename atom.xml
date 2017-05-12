@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mmaann.github.io/"/>
-  <updated>2017-05-12T15:24:14.859Z</updated>
+  <updated>2017-05-12T15:43:17.439Z</updated>
   <id>http://mmaann.github.io/</id>
   
   <author>
@@ -20,10 +20,10 @@
     <link href="http://mmaann.github.io/2017/05/11/linux-simple-use/"/>
     <id>http://mmaann.github.io/2017/05/11/linux-simple-use/</id>
     <published>2017-05-11T14:23:38.000Z</published>
-    <updated>2017-05-12T15:24:14.859Z</updated>
+    <updated>2017-05-12T15:43:17.439Z</updated>
     
     <content type="html"><![CDATA[<p>
-<center>Linux最基本的使用介绍：开机——终端——命令行——帮助——关机</center>
+<center>开机——终端——命令行——帮助——关机</center>
 </p>
 <p><a id="more"></a></p>
 <h2>登录</h2>
@@ -152,7 +152,7 @@ Shell程序：
     <summary type="html">
     
       &lt;p&gt;
-&lt;center&gt;Linux最基本的使用介绍：开机——终端——命令行——帮助——关机&lt;/center&gt;
+&lt;center&gt;开机——终端——命令行——帮助——关机&lt;/center&gt;
 &lt;/p&gt;
 &lt;p&gt;
     
@@ -174,10 +174,10 @@ Shell程序：
     <link href="http://mmaann.github.io/2017/05/11/linux-history/"/>
     <id>http://mmaann.github.io/2017/05/11/linux-history/</id>
     <published>2017-05-11T08:54:47.000Z</published>
-    <updated>2017-05-12T15:17:06.513Z</updated>
+    <updated>2017-05-12T15:43:15.983Z</updated>
     
     <content type="html"><![CDATA[<p>
-<center>Linux的前世今生：Unix——GNU——Linux</center>
+<center>Unix——GNU——Linux</center>
 </p>
 <p><a id="more"></a></p>
 <h1>Unix</h1>
@@ -249,7 +249,7 @@ Unix具有可移植性，发展处许多分支，被称为Unix-like的操作系�
     <summary type="html">
     
       &lt;p&gt;
-&lt;center&gt;Linux的前世今生：Unix——GNU——Linux&lt;/center&gt;
+&lt;center&gt;Unix——GNU——Linux&lt;/center&gt;
 &lt;/p&gt;
 &lt;p&gt;
     
