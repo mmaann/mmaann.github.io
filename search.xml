@@ -1,49 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Linux初识]]></title>
-    <url>%2F2017%2F05%2F11%2Flinux-simple-use%2F</url>
-    <content type="text"><![CDATA[开机——终端——命令行——帮助——关机 登录 命令行：root/密码(密码输入时不显示) 图形界面：startx 终端 物理终端：直接接入本机的显示器和键盘；/dev/console 虚拟终端:在物理硬件之上以软件方式虚拟实现的终端；centos6、centos7提供6个虚拟终端：tty1-6，Ctrl+Alt+F#[1,6]；/dev/tty1-6 模拟终端：基于ssh或Telnet协议远程打开的界面；/dev/pts/#[0,n] 查看当前终端设备的命令：tty 交互式接口 启动终端后，附加在终端的交互式应用程序 GUI X protocol ,window manager,desktop Desktop Gnome（c，gtk） KDE（c++，gc） XFCE（轻量级桌面） CLI Shell程序： sh（bourn） csh tcsh ksh bash（bourn again shell，GPL） zsh 显示当前shell：echo $(shell) 显示系统支持的shell：cat /etc/shells 文件系统简介 文件包括两类数据： 元数据（metadata）：记录文件的属性 数据（data）：记录文件数据 文件名严格区分大小写 文件名可使用出/外的任意字符 /表示根目录，也代表目录分隔符 文件名的长度不超过255个字符 .开头的文件为隐藏文件 路径： 绝对路径：从根目录开始的路径 相对路径：从当前路径起始的路径 ..表示当前目录的上一层目录 pwd命令显示当前工作目录 Linux命令及帮助 命令： 文件系统相关 * 目录管理 * 文件管理 * 文件查看 * 文件编辑 系统管理相关 帮助： 内部命令：help COMMAND 外部命令： COMMAND -h(--help) man COMMAND 手册目录： /usr/share/man man1：用户命令 man2：系统调用 man3：C库调用 man4：设备文件及特殊文件 man5：配置文件格式 man6：游戏 man7：杂项 man8：管理类命令 有些命令会出现在不止一个章节，常看相应章节的文档用：man # COMMAND man命令的配置文件：/etc/man.config（centos6），/etc/mandb.conf info COMMAND 程序自身文档：README,INSTALL,Changelog 文档目录：/usr/share/doc/COMMAND-VERSION 站点官方文档：Documentation 发行版的官方文档 其他：搜索引擎，技术论坛 关机 关机：halt，poweroff，shutdown，init 0 重启：reboot，shutdown -r，init 6 查看登陆用户：who，whoami，w]]></content>
-      <categories>
-        <category>学习</category>
-        <category>Linux运维学习笔记</category>
-      </categories>
-      <tags>
-        <tag>笔记</tag>
-        <tag>Linux基础</tag>
-      </tags>
+    <title><![CDATA[Linux运维学习笔记002]]></title>
+    <url>%2F2017%2F05%2F28%2FLinux%E8%BF%90%E7%BB%B4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0002%2F</url>
+    <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[Linux的发展历史]]></title>
-    <url>%2F2017%2F05%2F11%2Flinux-history%2F</url>
-    <content type="text"><![CDATA[Unix——GNU——Linux Unix Unix的前身是由贝尔实验室的Ken Thompson用* 组合语言* 写成的。后来在1971-1973年间由Dennis Ritchie用* C语言* 改写后才成为Unix。 Unix具有可移植性，发展处许多分支，被称为Unix-like的操作系统。 最纯种的Unix：BSD和System V。 1979年：AT&amp;T推出 System V第七版后收回版权。 1986年：x86架构的Minix操作系统诞生。 GNU 1984年:Richard Stallman提出GNU计划，倡导自由软件（free software），并制定发布GPL（General Public Licne）授权模式 Free Software（自由软件） 取得软件与源代码 复制 修改 在发行 回馈 禁止的行为 修改授权：不能将一个GPL授权的自由软件，在修改后取消它的GPL授权 单纯售卖：不能单纯的贩卖自由软件 Open source（开源）授权 Apache MIT BSD GPL LGPL Linux 1991年，芬兰人Linus Torvalds 开发出了Linux操作系统。Linux成功主要归因于：Minix（Unix），GNU， 开源社区等。Linux操作系统最底层的数据成为“核心（Kernel）” Linux distributions Linux Kernel Free Software Documentations（Tools） 可完整安装的程序 Linux的发型版本 商业版 社区版 RPM RHEL Centos Fedora SUSE DPKG（dpt） Debian Ubuntu Linux的哲学思想 一切皆文件：把几乎所有资源，包括硬件设备都组织为文件格式； 由众多单一目的小程序组成：一个程序只实现一个功能，而且要做好 尽量避免跟用户交互：实现脚本编程，以自动完成某些功能； 使用纯文本文件保存配置信息：一款使用的文本编程器即能完成系统配置工作。]]></content>
-      <categories>
-        <category>学习</category>
-        <category>Linux运维学习笔记</category>
-      </categories>
-      <tags>
-        <tag>笔记</tag>
-        <tag>Linux历史</tag>
-        <tag>Unix</tag>
-        <tag>GNU</tag>
-      </tags>
+    <title><![CDATA[Linux运维学习笔记001]]></title>
+    <url>%2F2017%2F05%2F27%2FLinux%E8%BF%90%E7%BB%B4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0001%2F</url>
+    <content type="text"><![CDATA[学习路径： 中级：Linux administrator 高级： 马哥对自己培训的说明： 培训加速知识的获取的过程，避免一些不必要的坑；培训不能获得经验，只有在实际操作中才能获得。 监督作用，消除个人惰性 上课的纪律： 作业和考试： 写博客：向读者解释清楚，包括what，why，who，where，when，how 考试 介绍上课用到的资源 VMware workstation使用介绍 计算机硬件基础： 现代计算机的组词：运算器、控制器、存储器、输入设备、输出设备 cpu bus memory 缓存 虚拟机：用软件（或加硬件）模拟硬件 现代计算机的cpu、内存本身就是虚拟的，虚拟机是在本来虚拟的基础上再次虚拟。 输入输出设备的模拟 硬盘的简介 操作系统 CPU 指令 指令集，二进制代码 编程语言：操作CPU的指令需要程序：汇编语言，高级语言 操作系统：计算机硬件千差万别，为了使编写的程序能够在不同的计算机上运行，程序员面向操作系统编写程序。 编程层次： 硬件规格：驱动程序 系统调用 库调用 操作应用程序的方式：UI（用户借口） GUI：图形 CLI：命令行 不同操作系统的程序：ABI 应用编程借口：API CPU架构类型： x64 x32 arm：省电 Unix: system BSD MIT:Richard Stallman GNU： GPL: Linux发行版本及与GNU的关系 slackware suse debian ubuntu redhat centos centos与Linux的关系，centos与rhel的关系是什么？ centos是Linux的一个发行版本，由centos社区维护。centos是基于rhel的开放源代码二次编译的，出图标外基本与rhel完全一样 各种开源协定的具体细节 GPL：软件自始至终都保持开放源代码的形式发布；在软件开放完整源码的情况下，使用者可以自由发挥；软件无论以何种方式发布，都必须附上源代码；开发者可以收取一定服务费，但不能与开放源码捆绑。 LGPL： Apache BSD 什么是自由软件？ 根据自由软件基金会的定义，不受限制的自由适用、研究、修改、发布的软件。 Linux的哲学思想是什么 一切皆文件：所有的资源都以文件的形式存在，包括硬件设备 由众多的小程序组成，每个小程序实现单一功能，复杂功能有多个小程序组合实现 尽量避免与用户交互，实现脚本化编程，自动实现某些功能 配置文件以纯文本的方式保存，一款文本编辑器即可实现系统配置]]></content>
   </entry>
   <entry>
-    <title><![CDATA[计算机基础——硬件、操作系统]]></title>
-    <url>%2F2017%2F05%2F11%2Fcomputer-basic%2F</url>
-    <content type="text"><![CDATA[计算机的五大组成部分 运算器 控制器 存储器 输入设备 输出设备 CPU 组成：控制器和运算器 CPU架构： x86 x64 arm 操作系统 为软件程序运行环境 通用目的 硬件驱动 进程管理 内存管理 网络管理 安全管理 系统调用 编程层次 硬件驱动 系统调用 库调用 UI GUI:图形界面 CLI：命令行界面]]></content>
-      <categories>
-        <category>学习</category>
-        <category>Linux运维学习笔记</category>
-      </categories>
+    <title><![CDATA[Linux文件目录管理命令]]></title>
+    <url>%2F2017%2F05%2F26%2F009-Linux%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95%E7%AE%A1%E7%90%86%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[install：安装或升级软件或备份数据 tree：树状图列出目录的内容 popd：用于删除目录栈中的记录 pushd：将目录加入命令堆叠中 dirs：显示目录记录 rmdir:删除空目录 mkdir：创建目录 rm：删除给定的文件和目录 pwd：以绝对路径方式现实当前工作目录 ls：列出目录内容列表 mv：重命名文件或目录 cp：将源文件或目录复制到目标文件或目录 cd：切换用户当前工作目录 1234cd 进入home目录cd ~ 进入home目录cd - 返回进入此目录前的目录cd .. 返回上一级目录]]></content>
       <tags>
-        <tag>计算机基础</tag>
-        <tag>笔记</tag>
+        <tag>rm</tag>
+        <tag>ls</tag>
+        <tag>mv</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[hello world]]></title>
-    <url>%2F2017%2F05%2F09%2Fhello-world%2F</url>
+    <url>%2F2017%2F05%2F09%2F001-hello-world%2F</url>
     <content type="text"><![CDATA[Hello World！ 这是mann的第一篇blog]]></content>
   </entry>
 </search>
