@@ -110,7 +110,7 @@
 <meta property="og:url" content="http://mmaann.github.io/2017/05/27/Linux运维学习笔记001/index.html">
 <meta property="og:site_name" content="mann&#39;s blog">
 <meta property="og:description" content="学习路径： 中级：Linux administrator 高级： 马哥对自己培训的说明：  培训加速知识的获取的过程，避免一些不必要的坑；培训不能获得经验，只有在实际操作中才能获得。 监督作用，消除个人惰性  上课的纪律： 作业和考试：  写博客：向读者解释清楚，包括what，why，who，where，when，how 考试  介绍上课用到的资源 VMware workstation使用介绍 计">
-<meta property="og:updated_time" content="2017-05-29T08:42:36.542Z">
+<meta property="og:updated_time" content="2017-05-29T08:54:47.758Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux运维学习笔记001">
 <meta name="twitter:description" content="学习路径： 中级：Linux administrator 高级： 马哥对自己培训的说明：  培训加速知识的获取的过程，避免一些不必要的坑；培训不能获得经验，只有在实际操作中才能获得。 监督作用，消除个人惰性  上课的纪律： 作业和考试：  写博客：向读者解释清楚，包括what，why，who，where，when，how 考试  介绍上课用到的资源 VMware workstation使用介绍 计">
@@ -468,12 +468,14 @@ centos</li>
 <h3>各种开源协定的具体细节</h3>
 <ul>
 <li>GPL：软件自始至终都保持开放源代码的形式发布；在软件开放完整源码的情况下，使用者可以自由发挥；软件无论以何种方式发布，都必须附上源代码；开发者可以收取一定服务费，但不能与开放源码捆绑。</li>
-<li>LGPL：</li>
-<li>Apache</li>
-<li>BSD</li>
+<li>LGPL：宽松的GPL协定，LGPL是GPL的一个为主要为类库使用设计的开源协议。和GPL要求任何使用/修改/衍生之GPL类库的的软件必须采用GPL协议不同。LGPL允许商业软件通过类库引用(link)方式使用LGPL类库而不需要开源商业软件的代码。这使得采用LGPL协议的开源代码可以被商业软件作为类库引用并发布和销售。</li>
+<li>BSD：BSD开源协议是一个给于使用者很大自由的协议。基本上使用者可以”为所欲为”，可以自由的使用，修改源代码，也可以将修改后的代码作为开源或者专有软件再发布。<br>
+再次发布的软件或源代码必须包含BSD协定，不能用源代码作者做商业推广</li>
 </ul>
-<h3>什么是自由软件？</h3>
-<p>根据自由软件基金会的定义，不受限制的自由适用、研究、修改、发布的软件。</p>
+<h3>什么是自由软件？与开源软件的关系</h3>
+<p>根据自由软件基金会的定义，不受限制的自由适用、研究、修改、发布的软件。<br>
+自由软件都是开源的，自由软件比开源软件有更严格的概念要求，自由软件的原意是授予人们“自由”适用软件的权利。
+开源软件之遵循相关开源协定的软件，不是所有的开源软件都是自由软件。</p>
 <h3>Linux的哲学思想是什么</h3>
 <ol>
 <li>一切皆文件：所有的资源都以文件的形式存在，包括硬件设备</li>
@@ -667,7 +669,7 @@ centos</li>
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">VMware workstation使用介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">操作系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">CPU架构类型：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">Linux发行版本及与GNU的关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">5.</span> <span class="nav-text">centos与Linux的关系，centos与rhel的关系是什么？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">6.</span> <span class="nav-text">各种开源协定的具体细节</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">7.</span> <span class="nav-text">什么是自由软件？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">8.</span> <span class="nav-text">Linux的哲学思想是什么</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">VMware workstation使用介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">操作系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">CPU架构类型：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">Linux发行版本及与GNU的关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">5.</span> <span class="nav-text">centos与Linux的关系，centos与rhel的关系是什么？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">6.</span> <span class="nav-text">各种开源协定的具体细节</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">7.</span> <span class="nav-text">什么是自由软件？与开源软件的关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">8.</span> <span class="nav-text">Linux的哲学思想是什么</span></a></li></ol></div>
             
 
           </div>
