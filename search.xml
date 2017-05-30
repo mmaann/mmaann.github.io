@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Linux运维学习笔记002]]></title>
     <url>%2F2017%2F05%2F28%2FLinux%E8%BF%90%E7%BB%B4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0002%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[终端：用户与主机交互途径 物理终端：控制台/dev/console 虚拟终端：/dev/tty1-6 伪终端：由软件模拟的 ,远程ssh，图形界面下打开的命令提示符 如何查看当前所处的终端？ 交互式接口：启动终端后，在终端设备附加的交互式应用程序 GUI： CLI： shell程序有那些？ sh，bash，csh，ksh，zsh，tcsh 查看当前的shell、显示本机所有的shell的命令 12echo $SHELL cat /etc/shells 命令 输入命令，回车，执行。 shell中可执行的命令分那两类，如何查看其类型？ 分为内部命令和外部命令，用type COMMAND 查看其类型 Linux文件系统 文件包含两类数据：元数据和文件数据 Linux文件名命名规范有那些？ 文件名区分大小写 文件名能可以适用出“/”的任意字符，不建议用特殊字符 文件名的长度不超过255各字符 以 . 开头的文件为隐藏文件 绝对路径与相对路径，当前目录（pwd） LSB：Linux standard base，制作Linux文件系统规范。 linux命令帮助 内建命令：help COMMAND 外部命令：都是一个可执行的应用程序，位于系统目录之下，通过命令which，whereis可以查看其所在目录。 shell程序通过搜索环境变量PATH来寻找命令 查看PATH环境变量的方法：echo $PATH 为了提高运行速度，shell只会在第一次运行程序时搜寻程序的路径，然后以键值对的方式存储，方便第二次运行。通过命令：hash查看存储的命令，清空缓存：hash -r history：历史命令 历史命令存储在~/.bash_history文件，当前登录的历史命令缓存在内存中，登出后追加到~/.bash_history文件 history的常用指令： 123456history -c 清空history历史记录history -a 追加本次对话的命令到~/.bash_history文件history -d 命令的行号 删除指定行号的历史命令快捷操作：！# 执行制定行号的命令 ！string 执行最近一次以string开头的命令 ！！ 执行上一条命令 COMMAND --help 或 COMMAND -h man COMMAND info COMMAND 程序自身的帮助文档：README,INSTALL,CHANGELOG 程序官方文档 发行版的文档 Google man的使用 man手册的存储位置在那？ man的各个章节都是什么？如何查看具体某个章节的man手册？ man命令的配置文件在那？如何修改MANPATH? man命令具体怎么使用？打开手册后怎么操作？]]></content>
   </entry>
   <entry>
     <title><![CDATA[Linux运维学习笔记001]]></title>

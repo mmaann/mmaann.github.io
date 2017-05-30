@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mmaann.github.io/"/>
-  <updated>2017-05-28T13:12:22.768Z</updated>
+  <updated>2017-05-30T14:37:38.230Z</updated>
   <id>http://mmaann.github.io/</id>
   
   <author>
@@ -20,9 +20,76 @@
     <link href="http://mmaann.github.io/2017/05/28/Linux%E8%BF%90%E7%BB%B4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0002/"/>
     <id>http://mmaann.github.io/2017/05/28/Linux运维学习笔记002/</id>
     <published>2017-05-28T13:12:22.000Z</published>
-    <updated>2017-05-28T13:12:22.768Z</updated>
+    <updated>2017-05-30T14:37:38.230Z</updated>
+    
+    <content type="html"><![CDATA[<h3>终端：用户与主机交互途径</h3>
+<ul>
+<li>物理终端：控制台/dev/console</li>
+<li>虚拟终端：/dev/tty1-6</li>
+<li>伪终端：由软件模拟的 ,远程ssh，图形界面下打开的命令提示符</li>
+</ul>
+<p>如何查看当前所处的终端？</p>
+<p>交互式接口：启动终端后，在终端设备附加的交互式应用程序</p>
+<ul>
+<li>GUI：</li>
+<li>CLI：<br>
+shell程序有那些？
+sh，bash，csh，ksh，zsh，tcsh
+查看当前的shell、显示本机所有的shell的命令
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">echo $SHELL   </div><div class="line">cat /etc/shells</div></pre></td></tr></table></figure></li>
+</ul>
+<h3>命令</h3>
+<p>输入命令，回车，执行。<br>
+shell中可执行的命令分那两类，如何查看其类型？<br>
+分为内部命令和外部命令，用type COMMAND 查看其类型</p>
+<h3>Linux文件系统</h3>
+<p>文件包含两类数据：元数据和文件数据<br>
+Linux文件名命名规范有那些？</p>
+<ol>
+<li>文件名区分大小写</li>
+<li>文件名能可以适用出“/”的任意字符，不建议用特殊字符</li>
+<li>文件名的长度不超过255各字符</li>
+<li>以 . 开头的文件为隐藏文件
+绝对路径与相对路径，当前目录（pwd）</li>
+</ol>
+<p>LSB：Linux standard base，制作Linux文件系统规范。</p>
+<h3>linux命令帮助</h3>
+<p>内建命令：help COMMAND</p>
+<p>外部命令：都是一个可执行的应用程序，位于系统目录之下，通过命令which，whereis可以查看其所在目录。</p>
+<ul>
+<li>shell程序通过搜索环境变量PATH来寻找命令</li>
+<li>查看PATH环境变量的方法：echo $PATH</li>
+<li>为了提高运行速度，shell只会在第一次运行程序时搜寻程序的路径，然后以键值对的方式存储，方便第二次运行。通过命令：hash查看存储的命令，清空缓存：hash -r</li>
+<li>history：历史命令<br>
+历史命令存储在~/.bash_history文件，当前登录的历史命令缓存在内存中，登出后追加到~/.bash_history文件<br>
+history的常用指令：<br>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">history -c 清空history历史记录</div><div class="line">history -a 追加本次对话的命令到~/.bash_history文件</div><div class="line">history -d 命令的行号 删除指定行号的历史命令</div><div class="line">快捷操作：！# 执行制定行号的命令</div><div class="line">         ！string 执行最近一次以string开头的命令</div><div class="line">         ！！ 执行上一条命令</div></pre></td></tr></table></figure></li>
+</ul>
+<ol>
+<li>COMMAND --help 或 COMMAND -h</li>
+<li>man COMMAND</li>
+<li>info COMMAND</li>
+<li>程序自身的帮助文档：README,INSTALL,CHANGELOG</li>
+<li>程序官方文档</li>
+<li>发行版的文档</li>
+<li>Google</li>
+</ol>
+<h3>man的使用</h3>
+<p>man手册的存储位置在那？<br>
+man的各个章节都是什么？如何查看具体某个章节的man手册？<br>
+man命令的配置文件在那？如何修改MANPATH?<br>
+man命令具体怎么使用？打开手册后怎么操作？</p>
+]]></content>
     
     <summary type="html">
+    
+      &lt;h3&gt;终端：用户与主机交互途径&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;物理终端：控制台/dev/console&lt;/li&gt;
+&lt;li&gt;虚拟终端：/dev/tty1-6&lt;/li&gt;
+&lt;li&gt;伪终端：由软件模拟的 ,远程ssh，图形界面下打开的命令提示符&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如何查看当前所
     
     </summary>
     
