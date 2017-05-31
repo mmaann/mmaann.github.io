@@ -110,7 +110,7 @@
 <meta property="og:url" content="http://mmaann.github.io/2017/05/28/Linux运维学习笔记002/index.html">
 <meta property="og:site_name" content="mann&#39;s blog">
 <meta property="og:description" content="终端：用户与主机交互途径  物理终端：控制台/dev/console 虚拟终端：/dev/tty1-6 伪终端：由软件模拟的 ,远程ssh，图形界面下打开的命令提示符  如何查看当前所处的终端？ 交互式接口：启动终端后，在终端设备附加的交互式应用程序  GUI： CLI： shell程序有那些？ sh，bash，csh，ksh，zsh，tcsh 查看当前的shell、显示本机所有的shell的命令">
-<meta property="og:updated_time" content="2017-05-30T14:37:38.230Z">
+<meta property="og:updated_time" content="2017-05-31T14:12:43.958Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux运维学习笔记002">
 <meta name="twitter:description" content="终端：用户与主机交互途径  物理终端：控制台/dev/console 虚拟终端：/dev/tty1-6 伪终端：由软件模拟的 ,远程ssh，图形界面下打开的命令提示符  如何查看当前所处的终端？ 交互式接口：启动终端后，在终端设备附加的交互式应用程序  GUI： CLI： shell程序有那些？ sh，bash，csh，ksh，zsh，tcsh 查看当前的shell、显示本机所有的shell的命令">
@@ -452,9 +452,25 @@ history的常用指令：<br>
 </ol>
 <h3>man的使用</h3>
 <p>man手册的存储位置在那？<br>
+user/share/man<br>
 man的各个章节都是什么？如何查看具体某个章节的man手册？<br>
+通过man man查询：man1：执行程序或shell命令；man5文件格式；man8管理类命令。<br>
 man命令的配置文件在那？如何修改MANPATH?<br>
-man命令具体怎么使用？打开手册后怎么操作？</p>
+/etc/man_config,修改man_config可以修改MANPATH<br>
+man命令具体怎么使用？打开手册后怎么操作？<br>
+man COMMAND,具体操作与less命令相似。</p>
+<h3>cat，tac：文件内容查看命令</h3>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cat -E:显示行结束符￥</div><div class="line">cat -n：显示行号</div></pre></td></tr></table></figure></p>
+<h3>file：显示文件内容的类型</h3>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">file 文件路径</div></pre></td></tr></table></figure></p>
+<h3>echo：回显命令</h3>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">echo -n：禁止自动添加换行符</div><div class="line">echo -e: 允许使用转义符：\n:换行，\t:制表符</div><div class="line">echo “$VAR_NAME”：变量会替换，双引号表示弱引用</div><div class="line">echo ‘$VAR_NAME’: 变量不会替换，强引用</div></pre></td></tr></table></figure></p>
+<h3>which：显示命令对应的程序路径</h3>
+<p>which的通过查找环境变量PATH来搜索命令路径</p>
+<h4>whereis：定位命令的二进制程序、源代码文件和man手册路径</h4>
+<p>查找速度快，基于系统内存储的数据库文件；数据库文件每周更新一次，所以有时查找到的数据并不准确。</p>
+<h3>whatis：查询命令执行什么功能，并打印在终端上</h3>
+<p>此命令等同于：man -f COMMAND</p>
 
       
     </div>
@@ -500,6 +516,10 @@ man命令具体怎么使用？打开手册后怎么操作？</p>
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/05/31/Linux运维学习笔记003/" rel="prev" title="Linux运维学习笔记003">
+                Linux运维学习笔记003 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -571,7 +591,7 @@ man命令具体怎么使用？打开手册后怎么操作？</p>
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -637,7 +657,7 @@ man命令具体怎么使用？打开手册后怎么操作？</p>
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">终端：用户与主机交互途径</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">Linux文件系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">linux命令帮助</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">5.</span> <span class="nav-text">man的使用</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">终端：用户与主机交互途径</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">Linux文件系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">linux命令帮助</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">5.</span> <span class="nav-text">man的使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">6.</span> <span class="nav-text">cat，tac：文件内容查看命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">7.</span> <span class="nav-text">file：显示文件内容的类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">8.</span> <span class="nav-text">echo：回显命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">9.</span> <span class="nav-text">which：显示命令对应的程序路径</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">9.1.</span> <span class="nav-text">whereis：定位命令的二进制程序、源代码文件和man手册路径</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">10.</span> <span class="nav-text">whatis：查询命令执行什么功能，并打印在终端上</span></a></li></ol></div>
             
 
           </div>
