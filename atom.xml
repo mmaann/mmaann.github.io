@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mmaann.github.io/"/>
-  <updated>2017-05-31T14:13:51.156Z</updated>
+  <updated>2017-06-03T14:36:01.248Z</updated>
   <id>http://mmaann.github.io/</id>
   
   <author>
@@ -20,9 +20,102 @@
     <link href="http://mmaann.github.io/2017/05/31/Linux%E8%BF%90%E7%BB%B4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0003/"/>
     <id>http://mmaann.github.io/2017/05/31/Linux运维学习笔记003/</id>
     <published>2017-05-31T14:13:51.000Z</published>
-    <updated>2017-05-31T14:13:51.156Z</updated>
+    <updated>2017-06-03T14:36:01.248Z</updated>
+    
+    <content type="html"><![CDATA[<h3>linux文件系统</h3>
+<p>FHS：Filesystem Hierarchy Standard，文件系统层次结构标准定义linux操作系统的主要目录及目录内容。
+文件系统的起始：根 /<br>
+各个目录的内容是什么？能否独立分区？</p>
+<ul>
+<li>/boot：与系统启动相关的引导文件存放目录，内核文件，引导加载器</li>
+<li>/bin：供所有用户使用的二进制命令，不可关联到独立分区，系统启动即用到的</li>
+<li>/sbin：管理类命令，不可关联到独立分区，系统启动即用到</li>
+<li>/lib：基本共享库文件，以及内核模块文件</li>
+<li>/lib64：64位系统的库文件</li>
+<li>/etc：配置文件，纯文本文件</li>
+<li>/home：家目录</li>
+<li>/root：root的家目录</li>
+<li>/media：便携式移动挂载点
+<ul>
+<li>cdrom</li>
+<li>usb</li>
+</ul>
+</li>
+<li>/mnt：临时文件系统挂载</li>
+<li>/dev：设备文件及特殊文件存储位置
+<ul>
+<li>block device：随机访问</li>
+<li>character device：线性访问</li>
+</ul>
+</li>
+<li>/opt：第三方程序安装位置</li>
+<li>/srv：service，系统上的服务用到的数据</li>
+<li>/tmp：临时文件目录</li>
+<li>/usr：universal shared read-only data，
+<ul>
+<li>/bin</li>
+<li>/sbin</li>
+<li>/lib</li>
+<li>/lib64</li>
+<li>/etc</li>
+<li>/include:c程序的头文件</li>
+<li>/share:doc，man</li>
+<li>/local:第三方应用程序安装位置
+<ul>
+<li>/bin</li>
+<li>/sbin</li>
+<li>/lib</li>
+<li>/lib64</li>
+<li>/etc</li>
+<li>/share</li>
+</ul>
+</li>
+<li>/var：variable data files
+<ul>
+<li>/cache：应用程序的缓存</li>
+<li>/lib：应用程序的状态信息</li>
+<li>/local：专用语/usr/local下的应用程序存储的可变数据</li>
+<li>/lock：</li>
+<li>/log</li>
+<li>/opt</li>
+<li>/run：运行中的进程相关数据</li>
+<li>/spool</li>
+<li>/tmp：保存系统两次重启之间产生的数据</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>/proc：用于输出内核与进程信息相关的虚拟文件系统，伪文件系统</li>
+<li>/sys：用于输出当前系统上硬件设备的虚拟文件系统，伪文件系统</li>
+<li>/selinux：secure enchanced linux</li>
+</ul>
+<h3>linux的应用程序组成部分</h3>
+<ul>
+<li>二进制：bin</li>
+<li>库文件：lib</li>
+<li>配置文件：etc</li>
+<li>帮助文件：/usr/share/man,/usr/share/doc</li>
+</ul>
+<h3>linux的文件类型有那些？</h3>
+<ul>
+<li>-（f）普通文件</li>
+<li>d：目录文件</li>
+<li>b：块设备文件</li>
+<li>c：字符设备</li>
+<li>l：软连接，符号链接</li>
+<li>p：puppet，管道文件</li>
+<li>s：socket，套接字文件</li>
+</ul>
+]]></content>
     
     <summary type="html">
+    
+      &lt;h3&gt;linux文件系统&lt;/h3&gt;
+&lt;p&gt;FHS：Filesystem Hierarchy Standard，文件系统层次结构标准定义linux操作系统的主要目录及目录内容。
+文件系统的起始：根 /&lt;br&gt;
+各个目录的内容是什么？能否独立分区？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;/bo
     
     </summary>
     
