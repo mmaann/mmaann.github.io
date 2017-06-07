@@ -110,7 +110,7 @@
 <meta property="og:url" content="http://mmaann.github.io/2017/05/31/Linux运维学习笔记003/index.html">
 <meta property="og:site_name" content="mann&#39;s blog">
 <meta property="og:description" content="linux文件系统 FHS：Filesystem Hierarchy Standard，文件系统层次结构标准定义linux操作系统的主要目录及目录内容。 文件系统的起始：根 / 各个目录的内容是什么？能否独立分区？  /boot：与系统启动相关的引导文件存放目录，内核文件，引导加载器 /bin：供所有用户使用的二进制命令，不可关联到独立分区，系统启动即用到的 /sbin：管理类命令，不可关联到独立">
-<meta property="og:updated_time" content="2017-06-03T14:36:01.248Z">
+<meta property="og:updated_time" content="2017-06-03T14:56:28.384Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux运维学习笔记003">
 <meta name="twitter:description" content="linux文件系统 FHS：Filesystem Hierarchy Standard，文件系统层次结构标准定义linux操作系统的主要目录及目录内容。 文件系统的起始：根 / 各个目录的内容是什么？能否独立分区？  /boot：与系统启动相关的引导文件存放目录，内核文件，引导加载器 /bin：供所有用户使用的二进制命令，不可关联到独立分区，系统启动即用到的 /sbin：管理类命令，不可关联到独立">
@@ -427,7 +427,7 @@
 <li>/opt：第三方程序安装位置</li>
 <li>/srv：service，系统上的服务用到的数据</li>
 <li>/tmp：临时文件目录</li>
-<li>/usr：universal shared read-only data，
+<li>/usr：universal shared read-only data，一般要关联独立分区
 <ul>
 <li>/bin</li>
 <li>/sbin</li>
@@ -480,7 +480,7 @@
 <li>c：字符设备</li>
 <li>l：软连接，符号链接</li>
 <li>p：puppet，管道文件</li>
-<li>s：socket，套接字文件</li>
+<li>s：socket，套接字文件,同一系统不同程序间的数据交换</li>
 </ul>
 
       
@@ -527,6 +527,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/06/04/linux运维学习笔记004/" rel="prev" title="linux运维学习笔记004">
+                linux运维学习笔记004 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -598,7 +602,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
