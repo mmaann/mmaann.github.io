@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mmaann.github.io/"/>
-  <updated>2017-06-04T12:03:09.456Z</updated>
+  <updated>2017-06-08T15:21:51.190Z</updated>
   <id>http://mmaann.github.io/</id>
   
   <author>
@@ -20,9 +20,77 @@
     <link href="http://mmaann.github.io/2017/06/04/linux%E8%BF%90%E7%BB%B4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0004/"/>
     <id>http://mmaann.github.io/2017/06/04/linux运维学习笔记004/</id>
     <published>2017-06-04T12:03:09.000Z</published>
-    <updated>2017-06-04T12:03:09.456Z</updated>
+    <updated>2017-06-08T15:21:51.190Z</updated>
+    
+    <content type="html"><![CDATA[<h1>bash基础特性</h1>
+<h3>历史命令history</h3>
+<h3>命令补全</h3>
+<p>如何实现命令补全的？</p>
+<h3>路径补全</h3>
+<h3>命令行展开</h3>
+<h3>命令别名：alias</h3>
+<h3>globe</h3>
+<h1>目录管理类命令</h1>
+<ul>
+<li>
+<p>cd：切换目录
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">cd   ：返回主目录</div><div class="line">cd ~ ：返回主目录</div><div class="line">cd - ：返回上一次所在目录</div><div class="line">cd .. :进入上一层目录</div></pre></td></tr></table></figure></p>
+</li>
+<li>
+<p>pwd：显示当前工作目录</p>
+</li>
+<li>
+<p>ls：显示目标列表</p>
+</li>
+<li>
+<p>mkdir：创建目录</p>
+</li>
+<li>
+<p>rmdir：删除空目录</p>
+</li>
+<li>
+<p>tree：以树状形式列出目录的内容</p>
+</li>
+</ul>
+<h1>文件查看类命令</h1>
+<ul>
+<li>cat&amp;tac</li>
+<li>more</li>
+<li>less</li>
+<li>tail</li>
+<li>head</li>
+</ul>
+<h1>touch</h1>
+<p>可以修改atime，mtime，不可修改ctime<br>
+文件由metadata，data<br>
+查看文件的状态命令：stat<br>
+文件的三个时间戳：</p>
+<ul>
+<li>access time：atime，读取文件的时间</li>
+<li>modify time：mtime，改变文件内容的时间</li>
+<li>change time：ctime，元数据改变的时间,只要改变atime或mtime，ctime必定改变
+单独修改mtime：
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">touch -m -t 20172319.36 filename</div></pre></td></tr></table></figure></li>
+</ul>
+<h1>文件管理命令</h1>
+<ul>
+<li>cp</li>
+<li>mv</li>
+<li>rm</li>
+</ul>
+]]></content>
     
     <summary type="html">
+    
+      &lt;h1&gt;bash基础特性&lt;/h1&gt;
+&lt;h3&gt;历史命令history&lt;/h3&gt;
+&lt;h3&gt;命令补全&lt;/h3&gt;
+&lt;p&gt;如何实现命令补全的？&lt;/p&gt;
+&lt;h3&gt;路径补全&lt;/h3&gt;
+&lt;h3&gt;命令行展开&lt;/h3&gt;
+&lt;h3&gt;命令别名：alias&lt;/h3&gt;
+&lt;h3&gt;globe&lt;/h3&gt;
+&lt;h1&gt;目
     
     </summary>
     

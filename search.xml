@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[linux运维学习笔记004]]></title>
     <url>%2F2017%2F06%2F04%2Flinux%E8%BF%90%E7%BB%B4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0004%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[bash基础特性 历史命令history 命令补全 如何实现命令补全的？ 路径补全 命令行展开 命令别名：alias globe 目录管理类命令 cd：切换目录 1234cd ：返回主目录cd ~ ：返回主目录cd - ：返回上一次所在目录cd .. :进入上一层目录 pwd：显示当前工作目录 ls：显示目标列表 mkdir：创建目录 rmdir：删除空目录 tree：以树状形式列出目录的内容 文件查看类命令 cat&amp;tac more less tail head touch 可以修改atime，mtime，不可修改ctime 文件由metadata，data 查看文件的状态命令：stat 文件的三个时间戳： access time：atime，读取文件的时间 modify time：mtime，改变文件内容的时间 change time：ctime，元数据改变的时间,只要改变atime或mtime，ctime必定改变 单独修改mtime： 1touch -m -t 20172319.36 filename 文件管理命令 cp mv rm]]></content>
   </entry>
   <entry>
     <title><![CDATA[Linux运维学习笔记003]]></title>

@@ -104,16 +104,16 @@
 
 
 
-<meta name="description" content="晚飞的笨鸟">
+<meta name="description" content="bash基础特性 历史命令history 命令补全 如何实现命令补全的？ 路径补全 命令行展开 命令别名：alias globe 目录管理类命令   cd：切换目录 1234cd   ：返回主目录cd ~ ：返回主目录cd - ：返回上一次所在目录cd .. :进入上一层目录   pwd：显示当前工作目录   ls：显示目标列表   mkdir：创建目录   rmdir：删除空目录   tree：">
 <meta property="og:type" content="article">
 <meta property="og:title" content="linux运维学习笔记004">
 <meta property="og:url" content="http://mmaann.github.io/2017/06/04/linux运维学习笔记004/index.html">
 <meta property="og:site_name" content="mann&#39;s blog">
-<meta property="og:description" content="晚飞的笨鸟">
-<meta property="og:updated_time" content="2017-06-04T12:03:09.456Z">
+<meta property="og:description" content="bash基础特性 历史命令history 命令补全 如何实现命令补全的？ 路径补全 命令行展开 命令别名：alias globe 目录管理类命令   cd：切换目录 1234cd   ：返回主目录cd ~ ：返回主目录cd - ：返回上一次所在目录cd .. :进入上一层目录   pwd：显示当前工作目录   ls：显示目标列表   mkdir：创建目录   rmdir：删除空目录   tree：">
+<meta property="og:updated_time" content="2017-06-08T15:21:51.190Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="linux运维学习笔记004">
-<meta name="twitter:description" content="晚飞的笨鸟">
+<meta name="twitter:description" content="bash基础特性 历史命令history 命令补全 如何实现命令补全的？ 路径补全 命令行展开 命令别名：alias globe 目录管理类命令   cd：切换目录 1234cd   ：返回主目录cd ~ ：返回主目录cd - ：返回上一次所在目录cd .. :进入上一层目录   pwd：显示当前工作目录   ls：显示目标列表   mkdir：创建目录   rmdir：删除空目录   tree：">
 
 
 
@@ -398,7 +398,63 @@
       
 
       
-        
+        <h1>bash基础特性</h1>
+<h3>历史命令history</h3>
+<h3>命令补全</h3>
+<p>如何实现命令补全的？</p>
+<h3>路径补全</h3>
+<h3>命令行展开</h3>
+<h3>命令别名：alias</h3>
+<h3>globe</h3>
+<h1>目录管理类命令</h1>
+<ul>
+<li>
+<p>cd：切换目录
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">cd   ：返回主目录</div><div class="line">cd ~ ：返回主目录</div><div class="line">cd - ：返回上一次所在目录</div><div class="line">cd .. :进入上一层目录</div></pre></td></tr></table></figure></p>
+</li>
+<li>
+<p>pwd：显示当前工作目录</p>
+</li>
+<li>
+<p>ls：显示目标列表</p>
+</li>
+<li>
+<p>mkdir：创建目录</p>
+</li>
+<li>
+<p>rmdir：删除空目录</p>
+</li>
+<li>
+<p>tree：以树状形式列出目录的内容</p>
+</li>
+</ul>
+<h1>文件查看类命令</h1>
+<ul>
+<li>cat&amp;tac</li>
+<li>more</li>
+<li>less</li>
+<li>tail</li>
+<li>head</li>
+</ul>
+<h1>touch</h1>
+<p>可以修改atime，mtime，不可修改ctime<br>
+文件由metadata，data<br>
+查看文件的状态命令：stat<br>
+文件的三个时间戳：</p>
+<ul>
+<li>access time：atime，读取文件的时间</li>
+<li>modify time：mtime，改变文件内容的时间</li>
+<li>change time：ctime，元数据改变的时间,只要改变atime或mtime，ctime必定改变
+单独修改mtime：
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">touch -m -t 20172319.36 filename</div></pre></td></tr></table></figure></li>
+</ul>
+<h1>文件管理命令</h1>
+<ul>
+<li>cp</li>
+<li>mv</li>
+<li>rm</li>
+</ul>
+
       
     </div>
 
@@ -489,8 +545,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/horseright.jpg"
@@ -561,6 +626,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">bash基础特性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.0.1.</span> <span class="nav-text">历史命令history</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.0.2.</span> <span class="nav-text">命令补全</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.0.3.</span> <span class="nav-text">路径补全</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.0.4.</span> <span class="nav-text">命令行展开</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.0.5.</span> <span class="nav-text">命令别名：alias</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.0.6.</span> <span class="nav-text">globe</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">目录管理类命令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">文件查看类命令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">touch</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">5.</span> <span class="nav-text">文件管理命令</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
